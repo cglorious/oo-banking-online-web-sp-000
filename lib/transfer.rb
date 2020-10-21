@@ -1,5 +1,3 @@
-require "pry"
-
 class Transfer
 
   attr_accessor :transfer, :sender, :receiver, :status, :amount
@@ -25,8 +23,6 @@ class Transfer
       "Transaction rejected. Please check your account balance."
     end
   end
-
-#binding.pry
 
   def reverse_transfer
     if @status = "complete"
