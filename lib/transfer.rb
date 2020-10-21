@@ -29,6 +29,8 @@ class Transfer
       @receiver.balance -= @amount #1050 - 50 = 1000
       @sender.balance += @amount #950 + 50 = 1000
       @status = "reversed"
+    else
+      nil
     end
   end
 
